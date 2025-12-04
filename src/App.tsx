@@ -119,10 +119,10 @@ function App() {
                                 </button>
                                 <button
                                     onClick={() => setActiveTab("yield")}
-                                    className={`absolute top-[26px] right-[16px] font-space-grotesk font-medium text-[16px] leading-[1.276] transition-all ${
+                                    className={`absolute top-[13px] right-[16px] w-[114px] h-[46px] rounded-[100px] font-space-grotesk font-medium text-[16px] leading-[1.276] transition-all ${
                                         activeTab === "yield"
-                                            ? "text-white"
-                                            : "text-black"
+                                            ? "bg-[#0B0917] text-white"
+                                            : "bg-transparent text-black"
                                     }`}
                                 >
                                     Yield Pool
@@ -191,6 +191,87 @@ function App() {
                                         <p className="font-inter font-light text-[16px] leading-[1.875] text-white">
                                             When it's your turn, you receive the
                                             full lump sum from all members.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {activeTab === "yield" && (
+                        <div className="bg-[#0B0917] rounded-[16px] p-[40px]">
+                            <h3 className="text-[28px] font-space-grotesk font-bold leading-[1.276] mb-[16px] text-white">
+                                Yield Pool
+                            </h3>
+                            <p className="text-[20px] font-inter font-light leading-[1.5] mb-[40px] text-white">
+                                Pool your funds together as a group and stake in
+                                vetted stablecoin yield strategies. Everyone's
+                                money works harder, and yield is distributed
+                                fairly.
+                            </p>
+                            <div className="space-y-[40px]">
+                                <div className="flex items-start gap-[16px]">
+                                    <div className="w-[35px] h-[35px] bg-[#F5F5F5] rounded-[25px] flex items-center justify-center flex-shrink-0">
+                                        <span className="text-black font-space-grotesk font-medium text-[20px] leading-[1.5]">
+                                            1
+                                        </span>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h4 className="font-inter font-normal text-[20px] leading-[1.5] mb-[4px] text-white">
+                                            Pool Funds Together
+                                        </h4>
+                                        <p className="font-inter font-light text-[16px] leading-[1.875] text-white">
+                                            All members contribute upfront.
+                                            Funds are pooled into a shared
+                                            vault.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start gap-[16px]">
+                                    <div className="w-[35px] h-[35px] bg-[#F5F5F5] rounded-[25px] flex items-center justify-center flex-shrink-0">
+                                        <span className="text-black font-space-grotesk font-medium text-[20px] leading-[1.5]">
+                                            2
+                                        </span>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h4 className="font-inter font-normal text-[20px] leading-[1.5] mb-[4px] text-white">
+                                            Stake for Yield
+                                        </h4>
+                                        <p className="font-inter font-light text-[16px] leading-[1.875] text-white">
+                                            Pooled stablecoins are staked in
+                                            vetted DeFi strategies on Polygon.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start gap-[16px]">
+                                    <div className="w-[35px] h-[35px] bg-[#F5F5F5] rounded-[25px] flex items-center justify-center flex-shrink-0">
+                                        <span className="text-black font-space-grotesk font-medium text-[20px] leading-[1.5]">
+                                            3
+                                        </span>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h4 className="font-inter font-normal text-[20px] leading-[1.5] mb-[4px] text-white">
+                                            Earn Together
+                                        </h4>
+                                        <p className="font-inter font-light text-[16px] leading-[1.875] text-white">
+                                            Yield accumulates over the staking
+                                            term for the entire pool.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start gap-[16px]">
+                                    <div className="w-[35px] h-[35px] bg-[#F5F5F5] rounded-[25px] flex items-center justify-center flex-shrink-0">
+                                        <span className="text-black font-space-grotesk font-medium text-[20px] leading-[1.5]">
+                                            4
+                                        </span>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h4 className="font-inter font-normal text-[20px] leading-[1.5] mb-[4px] text-white">
+                                            Distribute Returns
+                                        </h4>
+                                        <p className="font-inter font-light text-[16px] leading-[1.875] text-white">
+                                            Every month the yield is taken by
+                                            one of the members.
                                         </p>
                                     </div>
                                 </div>
